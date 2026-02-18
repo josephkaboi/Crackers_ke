@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crackers KE | Booking </title>
+    </head>
+<body>
+    <nav>
+        <a href="./My First.html">HOME|</a>
+        <a href="./about.html"> ABOUT|</a>
+        <a href="./contact.html"> CONTACT|</a>
+        <a href="./Booking.html"> BOOKING|</a>
+        <a href="./membership.html">MEMBERSHIP</a>
+    </nav>
+    <p>
+        <h3>Thank you for your inquiry.</h3>
+        Book a dancer for live events, private parties, corporate functions, music videos, 
+        social media content, or workshops. <br>Each performance is tailored to make your 
+        event unforgettable.
+        <br>We review each request carefully and seek to ensure a proposed Crackers performance
+        is mutually beneficial for all involved parties.<br>    
+        In order for us to further process your inquiry, we respectfully request you 
+        complete the following information in full.
+        <br>Once again, we appreciate the consideration and send you good deed to the 
+        journey ahead
+    </p>
+    <form action="./submission.html" method="GET">
+        <div>
+            <p>
+                Booking Purpose
+            </p>
+            <input type="radio" id="show" name="perform" value="Shows">
+            <label for="show">Live Performances / Shows</label><br>
+            <input type="radio" id="events" name="perform" value="events">
+            <label for="events">Private & Corporate Events</label><br>
+            <input type="radio" id="production" name="perform" value="production">
+            <label for="production">Video & Content Production</label><br>
+            <input type="radio" id="class" name="perform" value="class">
+            <label for="class">Classes & Workshops</label><br>
+            <input type="radio" id="appearance" name="perform" value="appearance">
+            <label for="appearance">Special Appearances / Guest Performances</label><br>
+            
+        </div><br>
+        <div>
+            <label for="dancers">Number of Dancers Required</label>
+            <select id="dancers" name="how_many_dancers">
+                <option value="7">All</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+        </div><br>
+        <div>
+            You may select your preferred dancers based on style and availability. 
+            <br>Our team will confirm final lineup based on scheduling and event requirements.<br><br>
+            <input type="checkbox" id="kardozar" name="dancer" value="kd">
+            <label for="kardozar">Kardozar</label><br>
+            <input type="checkbox" id="yazz" name="dancer" value="yazz">
+            <label for="yazz">Yazz</label><br>
+            <input type="checkbox" id="blackface" name="dancer" value="blacky">
+            <label for="blackface">Blackface</label><br>
+            <input type="checkbox" id="kangethe" name="dancer" value="kangethe">
+            <label for="kangethe">Kangethe</label><br>
+            <input type="checkbox" id="kaboi" name="dancer" value="kaboi">
+            <label for="kaboi">Kaboi</label><br>
+            <input type="checkbox" id="miraj" name="dancer" value="miraj">
+            <label for="miraj">Miraj</label><br>
+            <input type="checkbox" id="winsky" name="dancer" value="winsky">
+            <label for="winsky">Winsky</label><br>
+        </div><br>
+        <div>
+            <label for="location">Location of proposed Event</label>
+            <input type="text" list="locations" id="location" name="area">
+            <datalist id="locations">
+                <option value="Nairobi"></option>
+                <option value="Mombasa"></option>
+                <option value="Kisumu"></option>
+                <option value="Nakuru"></option>
+                <option value="Eldoret"></option>
+                <option value="Machakos"></option>
+                <option value="Other"></option>
+            </datalist>
+        </div><br>
+        <div>
+            <p>
+                Please indicate your proposed budget for this event to help us tailor our
+                services to your needs.
+            </p>
+            <label for="budget">Ksh / =</label>
+            <input type="number" id="budget" name="budget" step="1000" min="1000" required>
+        </div><br>
+        <div>
+            <label for="extra">Any other necessary detail;</label><br>
+            <textarea id="extra" name="extra" rows="5" column="10"></textarea>
+        </div><br>
+        <input type="submit" value="BOOK NOW">
+    </form>
+</body>
+</html>
