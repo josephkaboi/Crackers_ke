@@ -6,16 +6,25 @@
 body {
   background: #d1dcec;
 }
-.navbar {
+.home .navbar {
   width: 100%;
   height: 100px;
-  background: rgba(0, 0, 128, 0.2);
+  background: rgba(0, 0, 128, 0.3);
   position: fixed;
   top: 0;
   right: 0;
   text-align: center;
   padding-top: 40px;
   z-index: 10000;
+  padding-top: 40px;
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  background: #5365a2;
+  text-align: center;
+  padding-top: 40px;
+  padding-top: 40px;
 }
 #screen {
   width: 100%;
@@ -40,10 +49,9 @@ body {
 .navbar a{
   color: white;
   text-decoration: none;
-  border-radius: 20%;
-  border: 2px solid;
-  margin-left: 10px;
-  padding: 5px 5px;
+  margin-left: 30px;
+  font-size: larger;
+  font-weight: 700;
 }
 .icon {
   position: fixed;
@@ -79,4 +87,85 @@ body {
   margin-right: 500px;
   top: 9px;
   position: relative;
+}
+#header {
+  font-style: italic;
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+  border: 2px solid black;
+  width: 400px;
+  margin-left: 30%;
+  margin-top: 10px;
+}
+.container {
+  background: #292d42;
+  position: relative;
+  height: 570px;
+  top: 0;
+  margin-top: 10px;
+}
+.container img {
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+}
+.container p {
+  position: absolute;
+  top: 60px;
+  width: 650px;
+  left: 80px;
+  font-size: xx-large;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container ul {
+  position: relative;
+  left: 900px;
+  top: 10px;
+  width: 200px;
+  padding-left: 40px;
+  border: 2px white solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: black;
+  opacity: 0.8;
+}
+.list li {
+  border: 2px solid;
+  margin-top: 5px;
+  list-style: none;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  margin-bottom: 5px;
+  padding-top: 7px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: 700;
+  color: white;
+}
+.container .pictures {
+  position: reative;
+  left: 1080px;
+  top: 0px;
+}
+.list a {
+  text-decoration: none;
+  color: white;
+}
+.pictures {
+  border: 2px solid white;
+  background-color: black;
+  height: 30px;
+  width: 180px;
+  position: sticky;
+  text-align: center;
+  padding-top: 4px;
+  margin-top: 15px;
+}
+.pictures a {
+  color: white;
+  text-decoration: none;
 }
