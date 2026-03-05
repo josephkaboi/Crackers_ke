@@ -27,6 +27,16 @@ body {
   padding-top: 40px;
   padding-left: 150px;
 }
+.navbar {
+  animation: navb;
+  animation-duration: 1.4s;
+  animation-delay: 0ms;
+  animation-timing-function: ease-out;
+}
+@keyframes navb {
+  from{transform:translateY(-100px); }
+  to{margin-top: 0;}
+}
 #screen {
   width: 100%;
   z-index: -10;
@@ -39,13 +49,23 @@ body {
   background-color: none;
   position: absolute;
   border: none;
-  color: white;
+  color: red;
   left: 200px;
   width: 80px;
   height: 53px;
   top: 20px;
   border: 2px white dotted;
   padding: 7px;
+  animation: logoo;
+  animation-duration: 3s;
+  animation-delay: 1.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes logoo{
+  50%{transform: scale(0.5, 0.5);}
+  50%{opacity: 0;}
 }
 .navbar a{
   color: white;
@@ -56,6 +76,12 @@ body {
   border-right: solid white 4px;
   padding-right: 20px;
 }
+.navbar a:hover{
+  color: grey;
+}
+.navbar .active {
+  color: red;
+}
 .navbar #lastone {
   border: none;
 }
@@ -63,35 +89,27 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 90px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   gap: 10px;
   justify-content: flex-end;
 }
-.icon h5 {
-  width: 100px;
-  height: 30px;
-  text-align: center;
-  padding-top: 4px;
-  border: 3px solid white;
-  color: white;
-  text-decoration: none;
-  right: 20px;
-  position: relative;
-  right: 9px;
-  top: 21px;
+.icon i:hover {
+  color: red;
 }
-.icon h3 {
+.icon i {
   color: white;
-  margin-top: 25px;
-  margin-right: 10px;
+  position: relative;
+  right: 50px;
+  top: 15px;
+  margin-right: 5px;
 }
 .icon p {
   color: white;
-  margin-right: 500px;
-  top: 9px;
+  margin-right: 900px;
+  top: 10px;
   position: relative;
 }
 /*About*/
@@ -152,6 +170,14 @@ body {
   font-size: large;
   font-weight: 700;
   color: white;
+  background-color: black;
+}
+.list li a:hover {
+  color: black;
+}
+.list li:hover {
+  background-color: white;
+  border: 2px solid black;
 }
 .container .pictures {
   left: 1080px;
@@ -174,6 +200,14 @@ body {
 .pictures a {
   color: white;
   text-decoration: none;
+}
+.pictures:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+.pictures a:hover {
+  color: black;
+  font-weight: 500;
 }
 .intro {
   background-color: rgba(0, 0, 0, 0.9);
@@ -359,4 +393,130 @@ body {
   height: 337px;
   padding-top: 20px;
   margin-bottom: 0px;
+}
+/*CONTACT*/
+.contact {
+  background: linear-gradient( #b0e0e6 , #0f52ba);
+}
+table a:hover {
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  background-color: black;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.footer strong {
+  text-align: center;
+}
+.footer #fon:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  font-weight: 800;
+}
+.footer #mail:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  font-weight: 800;
+}
+.footer #tik:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  font-weight: 800;
+}
+.footer #ig:hover {
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  font-weight: 800;
+}
+.footer #phone {
+  text-align: center;
+  margin-top: 10px;
+}
+.footer #fon {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  height: 25px;
+  padding-top: 2px;
+  width: 100px;
+  text-align: center;
+  margin-top: 8px;
+  border: white solid;
+}
+.footer #email {
+  text-align: center;
+  margin-top: 30px;
+}
+.footer #mail {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  height: 25px;
+  padding-top: 1px;
+  width: 200px;
+  text-align: center;
+  margin-top: 28px;
+  border: white solid;
+}
+.footer #tiktok {
+  text-align: center;
+  margin-top: 50px;
+}
+.footer #tik {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  height: 25px;
+  padding-top: 1px;
+  width: 120px;
+  text-align: center;
+  margin-top: 48px;
+  border: white solid;
+}
+.footer #instagram {
+  text-align: center;
+  margin-top: 70px;
+}
+.footer #ig {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  height: 25px;
+  padding-top: 1px;
+  width: 120px;
+  text-align: center;
+  margin-top: 68px;
+  border: white solid;
+}
+table {
+  background: linear-gradient(to top, #0054b4 ,#40e0d0);
+  color: black;
+  text-decoration: none;
+  border: solid black 4px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 150px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+table a {
+  text-decoration: none;
+  color: black;
+}
+table td {
+  padding-left: 5px;
+  padding-right: 5px;
 }
