@@ -520,3 +520,171 @@ table td {
   padding-left: 5px;
   padding-right: 5px;
 }
+/*Booking*/
+.thank {
+  text-align: center;
+  background:linear-gradient( #b0e0e6 , #0f52ba);
+  font-family:'Courier New', Courier, monospace;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  font-weight: 700;
+}
+.thank h3 {
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+.form {
+  border: black solid 3px;
+  background-color: #E3EDDA;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  align-items: start;
+  grid-template-areas:
+   "head head"
+   "clien clien"
+   "book date"
+   "book location"
+   "budget dancers"
+   "extra extra"
+   "now now";
+}
+.form div {
+  padding: 20px;
+  /* border: 2px solid black; */
+}
+.form input:hover{
+  background-color: #fffafa;
+}
+.form input:checked{
+  color: red;
+}
+.heading {
+  grid-area: head;
+  background-color: #32CD32;
+  min-height: 70px;
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+.client {
+  grid-area: clien;
+  display: grid;
+  gap: 4px;
+  color: #184F1A;
+  font-weight: 700;
+}
+.client input {
+  min-height: 40px;
+  border: 2px solid black;
+  padding-left: 5px;
+}
+.purpose{
+  grid-area: book;
+}
+.purpose p {
+  margin-bottom: 7px;
+  color: #184F1A;
+  font-weight: 700;
+}
+.purpose section {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+  color: #184F1A;
+  font-weight: 700;
+}
+.date {
+  grid-area: date;
+  display: grid;
+  max-height: 90px;
+}
+.date label {
+  color: #184F1A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.date input {
+  border: 2px solid black;
+  padding-left: 5px;
+  min-height: 30px;
+}
+.location {
+  grid-area: location;
+  display: grid;
+  max-height: 86px;
+  align-content: end;
+}
+.location label {
+  color: #184F1A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.location input {
+  border: 2px solid black;
+  min-height: 30px;
+  color: black;
+  padding: 5px;
+}
+.budget {
+  grid-area: budget;
+  display: grid;
+}
+.budget label {
+  color: #184F1A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.budget input {
+  border: 2px solid black;
+  min-height: 30px;
+  padding-left: 5px;
+}
+.madancer {
+  grid-area: dancers;
+  display:  grid;
+}
+.madancer label {
+  color: #184F1A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.madancer select {
+  border: 2px solid black;
+  min-height: 30px;
+  padding-left: 5px;
+}
+.extra {
+  grid-area: extra;
+  display: grid;
+}
+.extra label {
+  color: #184F1A;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.extra textarea {
+  border: 2px solid black;
+  padding-left: 5px;
+}
+.submit {
+  grid-area: now;
+}
+/* .form div {
+    border: 2px solid black;
+} */
+.book {
+    max-width: 100px;
+    min-width: 100px;
+}
