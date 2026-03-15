@@ -397,6 +397,9 @@ body {
 /*CONTACT*/
 .contact {
   background: linear-gradient( #b0e0e6 , #0f52ba);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 table a:hover {
   color: white;
@@ -502,15 +505,20 @@ table a:hover {
 }
 table {
   background: linear-gradient(to top, #0054b4 ,#40e0d0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: black;
+  width: 90%;
   text-decoration: none;
   border: solid black 4px;
-  margin-top: 20px;
-  margin-left: 40px;
+  height: auto;
   margin-bottom: 150px;
   text-align: center;
   font-size: large;
   font-weight: 600;
+  margin-left: 4.2%;
+  margin-right: 4.2%;
 }
 table a {
   text-decoration: none;
@@ -560,10 +568,16 @@ table td {
   /* border: 2px solid black; */
 }
 .form input:hover{
-  background-color: #fffafa;
+  background-color: #e5eaf4;
 }
-.form input:checked{
-  color: red;
+.form select:hover{
+  background-color: #e5eaf4;
+}
+.form textarea:hover{
+  background-color: #e5eaf4;
+}
+.form .sectionn:hover{
+  background-color: #e5eaf4;
 }
 .heading {
   grid-area: head;
@@ -589,6 +603,7 @@ table td {
   min-height: 40px;
   border: 2px solid black;
   padding-left: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .purpose{
   grid-area: book;
@@ -604,6 +619,7 @@ table td {
   background-color: white;
   color: #184F1A;
   font-weight: 700;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .date {
   grid-area: date;
@@ -619,6 +635,7 @@ table td {
   border: 2px solid black;
   padding-left: 5px;
   min-height: 30px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .location {
   grid-area: location;
@@ -636,6 +653,7 @@ table td {
   min-height: 30px;
   color: black;
   padding: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .budget {
   grid-area: budget;
@@ -650,6 +668,7 @@ table td {
   border: 2px solid black;
   min-height: 30px;
   padding-left: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .madancer {
   grid-area: dancers;
@@ -664,6 +683,7 @@ table td {
   border: 2px solid black;
   min-height: 30px;
   padding-left: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .extra {
   grid-area: extra;
@@ -677,14 +697,176 @@ table td {
 .extra textarea {
   border: 2px solid black;
   padding-left: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
 }
 .submit {
   grid-area: now;
+  background-color: #32CD32;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+  text-align: center;
 }
-/* .form div {
-    border: 2px solid black;
-} */
 .book {
-    max-width: 100px;
-    min-width: 100px;
+  min-width: 100px;
+  min-height: 30px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+}
+.book:hover {
+  background-color: red !important;
+  color: green;
+  font-weight: 700;
+  border: 2px solid green;
+}
+/* PARTNERSHIP */
+.partnership {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+.topic {
+  display: flex;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  justify-content: center;
+  gap: 1%;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: white;
+}
+.statement {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 3% !important;
+  font-size: larger;
+  color: white;
+  margin: 0 auto;
+  padding: 1%;
+  font-weight: 500;
+}
+.boxes {
+  display: grid;
+  grid-template-rows: auto;
+  margin-bottom: 3% !important;
+  justify-content: space-evenly;
+  grid-auto-flow: column;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.boxes li {
+  list-style: none;
+  text-align: center;
+  padding: 1%;
+  font-size: large;
+  font-style: italic;
+  font-weight: 500;
+}
+.boxes h3 {
+  text-align: center;
+  padding-bottom: 3%;
+}
+.why {
+  border: 2px solid;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #28CEE7;
+
+}
+.offers {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #28CEE7;
+
+}
+.previous {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #28CEE7;
+  min-width: 250px;
+}
+.previous li {
+  padding-top: 2%;
+}
+.line {
+  margin-bottom: 3%;
+  width: 80%;
+  margin-left: 9%;
+}
+.action {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 3% !important;
+  font-size: larger;
+  color: white;
+  background-color: rgba(14, 152, 186, 0.6);
+  margin: 0 auto;
+  padding: 1%;
+  font-weight: 500;
+}
+.fill form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(14, 152, 186, 0.6);
+  height: 200px;
+  color: white;
+  padding: 2%;
+  gap: 3%;
+  grid-template-areas: 
+  " nem fon email"
+  ". sub ."
+  ;
+}
+.fill #nem {
+  grid-area: nem;
+  display: grid;
+  font-size: larger;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fill input {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+  padding-left: 2%;
+}
+.fill #num {
+  grid-area: fon;
+  display: grid;
+  font-size: larger;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fill #emaill {
+  grid-area: email;
+  display: grid;
+  font-size: larger;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fill #sabmit {
+  grid-area: sub;
+  text-align: center;
+  align-content: center;
+}
+.fill button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 2%;
+}
+.fill button:hover {
+  transform: scale( 1.2);
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 2%;
 }

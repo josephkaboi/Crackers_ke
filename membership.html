@@ -6,49 +6,66 @@
         <script src="https://kit.fontawesome.com/00930a170e.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body  class="partnership">
         <nav class="navbar">
         <a href="./index.html">HOME</a>
         <a href="./about.html"> ABOUT</a>
         <a href="./contact.html"> CONTACT</a>
         <a href="./Booking.html"> BOOKING</a>
-        <a id="lastone" class="active" href="./membership.html">MEMBERSHIP</a>
+        <a id="lastone" class="active" href="./membership.html">PARTNERSHIP</a>
     <header>
             <h6 id="logo">THE<br>CRACKERS<br>KE</h6>
     </header>
     </nav>
-        <h2>Join the movement</h2>
-        <p>
-            Becoming a member of our crew is more than simply signing up.<br>It is a 
-            commitment to excellence, unity, and continuous growth. <br>We believe in 
+    <div>
+        <div class="topic"> <i class="fa-solid fa-handshake"></i> COLLABORATE WITH US</div>
+        <div class="statement">"We are a dynamic dance crew passionate about performance, creativity, and digital content. <br>Our team collaborates with brands, events, and organizations to create engaging dance <br>experiences and promotional campaigns."</div>
+        <div class="boxes">
+        <div class="why">
+            <h3>Why Partner With Us</h3><hr>
             <ul>
-                <li>Discipline</li>
-                <li>Loyalty</li>
-                <li>Mutual respect</li>
+                <li>Strong social media presence</li>
+                <li>Event and Campaign Activation</li>
+                <li>High Audience Engagement</li>
+                <li>Authentic Promotion</li>
+                <li>Professional Content Creation</li>
             </ul>
-            as the foundation of everything we do.
-            <br>Each member plays a vital role in shaping our culture, strengthening our vision,
-            and upholding the standards that define us.
-            <br>Membership means showing up with purpose, supporting one another, and striving 
-            for greatness both individually and as a team. <br>Together, we build more than a
-            crew we build a legacy.<br>
-            Please select the category that best describes how you would like to be involved 
-            in our crew. <br>You may choose more than one option if applicable. 
-            <br>Each role plays an important part in helping us grow, perform, 
-            and achieve our goals together.
-        </p>
-        <section>
-            <form onsubmit="return false;">
-                <label for="name">Name : </label>
-                <input type="text" name="username" id="name" required><br>
-                <label for="number">Phone No. : </label>
-                <input type="number" name="phonenumber" id="number" pattern="{13}" required><br>
-                <label for="email">Email : </label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="range">How bad do you wanna join us :</label><br>
-                <input type="range" min="0" max="10" name="range" step="0.01" id="range">
-                
+        </div>
+        <div class="offers">
+            <h3>Partnership Opportunities</h3><hr>
+            <ul>
+                <li>Featuring products in dance videos</li>
+                <li>Social media campaigns</li>
+                <li>Sponsored dance challenges</li>
+                <li>Creative advertising videos</li>
+                <li>Dance workshops sponsored by brands</li>
+            </ul>
+        </div>
+        <div class="previous">
+            <h3>Previous Collaborations</h3><hr>
+            <ul>
+                <li>Weza Bet</li>
+                <li>Jooz Ltd</li>
+                <li>Black Market Records</li>
+                <li>KE.1tribe</li>
+                <li>ABCD Experience</li>
+            </ul>
+        </div>
+        </div>
+        <div class="line"><hr></div>
+        <div class="action">Interested in partnering with us?<br>
+            Let's create something amazing together.</div>
+        <section class="fill">
+            <form action="./submission.html" method="GET">
+                <div id="nem"><label for="name">Name :</label>
+                <input type="text" name="username" id="name" required></div>
+                <div id="num"><label for="number">Phone No. : </label>
+                <input type="number" name="phonenumber" id="number" pattern="{13}" required></div>
+                <div id="emaill"><label for="email">Email : </label>
+                <input type="email" id="email" name="email" required></div>
+                <div id="sabmit"><button type="submit">  CONTACT US <i class="fa-solid fa-paper-plane"></i></button></div>
             </form>
         </section>
+    </div>
     </body>
 </html>
