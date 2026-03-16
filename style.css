@@ -870,3 +870,29 @@ table td {
   color: white;
   padding: 2%;
 }
+.submi {
+  margin-top: 10%;
+  margin-left: 30%;
+  border: white 2px solid;
+  padding: 4%;
+  max-width: fit-content;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.submi a {
+  background-color: rgb(6, 250, 6);
+  padding: 2%;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+.submi h2 {
+  margin-bottom: 10%;
+}
+.submi a:hover {
+  color: rgb(6, 250, 6);
+  background-color: black;
+  border: solid rgb(6, 250, 6);
+}
+
